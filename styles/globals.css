@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,44 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+}
+
+.photo-owners {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  visibility: hidden;
+}
+
+.photo-likes {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  visibility: hidden;
+}
+
+.image:hover .photo-owners {
+  visibility: visible;
+}
+
+.image:hover .photo-likes {
+  visibility: visible;
+}
+
+li {
+  list-style-type: none;
 }
