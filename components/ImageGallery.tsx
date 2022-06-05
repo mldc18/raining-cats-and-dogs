@@ -39,9 +39,11 @@ const ImageGallery = (props: ImageGalleryProps) => {
                 animate={{ translateY: 0 }}
                 className="relative image"
                 initial={{ translateY: index % 2 == 0 ? -500 : -1000 }}
+                key={index}
                 transition={{ duration: 0.7, delay: index * 0.001 }}
               >
                 <Image
+                  alt=""
                   blurDataURL={photo.urls.regular}
                   className="transition ease-in-out hover:scale-125"
                   height={photo.height / 12}

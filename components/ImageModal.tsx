@@ -12,6 +12,7 @@ const ImageModal = (props: ImageModalProps) => {
 
   const image = imageUrl !== "" && (
     <Image
+      alt=""
       blurDataURL={imageUrl}
       className="z-[100]"
       layout="fill"
